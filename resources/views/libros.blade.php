@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Registro de Libros</title>
-
-    <!-- Bootstrap -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        /* Fondo general */
+      
         body {
-            background-color: #cbb4f5; /* morado claro */
+            background-color: #cbb4f5;
         }
 
-        /* Contenedor principal */
         .card-custom {
             background: white;
             border-radius: 15px;
@@ -21,7 +19,6 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
 
-        /* Botón personalizado */
         .btn-purple {
             background-color: #6f42c1;
             color: white;
@@ -32,9 +29,8 @@
             background-color: #5a35a3;
         }
 
-        /* Footer */
         .footer {
-            background-color: #2c1a4d; /* morado oscuro */
+            background-color: #2c1a4d; 
             color: white;
             text-align: center;
             padding: 10px;
@@ -53,7 +49,6 @@
         
         <h2 class="text-center mb-4">📚 Registro de Libros</h2>
 
-        <!-- FORMULARIO -->
         <form action="{{ route('libros.store') }}" method="POST">
             @csrf
 
@@ -78,7 +73,6 @@
 
         <h4 class="text-center mt-4">📖 Lista de Libros</h4>
 
-        <!-- TABLA -->
         <table class="table table-striped mt-3">
             <thead class="table-dark">
                 <tr>
